@@ -4,37 +4,46 @@
 
 Build a three-node Consul and two-node Vault cluster using HashiCorp Vagrant.
 
+## Pre-requisites
+
+### MacOS
+
+Homebrew:
+```
+brew cask install virtualbox virtualbox-enterprise-pack vagrant
+```
+
 ## Configuration
 
 ### Consul
 
-Version : `1.4.0`
+Version : `1.4.4`
 
 TLS Enabled : `true`
 
 Datacenter Name : `vagrant`
 
-Operating System : `CentOS 7`
+Operating System : `Ubuntu 18.04 LTS`
 
 ### Vault
 
-Version : `1.0.3`
+Version : `1.1.0`
 
 TLS Enabled : `true`
 
-Operating System : `CentOS 7`
+Operating System : `Ubuntu 18.04 LTS`
 
 ### Nodes
 
-consul0 - `172.20.0.11`
+consul0 - `10.100.0.11`
 
-consul1 - `172.20.0.12`
+consul1 - `10.100.0.12`
 
-consul2 - `172.20.0.13`
+consul2 - `10.100.0.13`
 
-vault1 - `172.20.10.11`
+vault1 - `10.100.10.11`
 
-vault2 - `172.20.10.12`
+vault2 - `10.100.10.12`
 
 ## Usage
 
